@@ -1,0 +1,50 @@
+﻿@model MVCProject1.Models.MVC_Employee
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>MVC_Employee</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.E_FirstName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.E_FirstName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.E_LastName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.E_LastName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.E_mail)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.E_mail)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.E_Contact)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.E_Contact)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.E_Id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
